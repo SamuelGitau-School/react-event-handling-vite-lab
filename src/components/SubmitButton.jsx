@@ -6,12 +6,12 @@ function SubmitButton (){
 
     const handleMouseEnter = ()=>{
         setIshovered(true);
-        console.log('Mouse entered button');
+        console.log('Mouse Entering');
     }
 
     const handleMouseLeave = ()=>{
         setIshovered(false)
-        console.log('Mouse left button');
+        console.log('Mouse Exiting');
     }
         return(
         <>
@@ -20,7 +20,7 @@ function SubmitButton (){
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
         >
-            {isHoverd ? 'Ready to Submit' : 'Submit'}
+            Submit Password
         </button>
         </>
     )
